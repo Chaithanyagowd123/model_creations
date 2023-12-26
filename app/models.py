@@ -25,6 +25,6 @@ class AccessRecord(models.Model):
     name=models.ForeignKey(Webpage,on_delete=models.CASCADE)
     date=models.DateField()
     author=models.CharField(max_length=100)
-
+    
     def __str__(self):
         return self.author
